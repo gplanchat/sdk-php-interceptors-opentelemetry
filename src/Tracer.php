@@ -35,6 +35,7 @@ final class Tracer
     /**
      * @param non-empty-string $name
      * @psalm-param SpanKind::KIND_* $spanKind
+     * @param array<non-empty-string, array<array-key, mixed>|null|scalar> $attributes
      * @throws \Throwable
      */
     public function trace(
